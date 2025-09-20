@@ -126,6 +126,11 @@ button{
     border-radius: 20px;
 }
 
+.icon{
+    color: black;
+    font: 30px;
+}
+
 #sidebar{
     height: 475px;
     width: 50px;
