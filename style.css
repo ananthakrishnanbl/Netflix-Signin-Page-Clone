@@ -103,18 +103,40 @@ input{
     padding: 7px;
 }
 
+input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+
 #pass{
     width:75%;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
 }
-#eye{
+#eyeopen{
     width:10%;
     border-radius: 0px;
     height: 44px;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     background-color: white;
+}
+
+#eyeopen:hover{
+    cursor: pointer;
+}
+
+#eyeclosed{
+    width:10%;
+    border-radius: 0px;
+    height: 44px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white;
+}
+#eyeclosed:hover{
+    cursor: pointer;
 }
 
 button{
@@ -136,6 +158,8 @@ button{
     width: 50px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
     background-color: #212121;
     position: absolute;
     top: 50%;
@@ -143,4 +167,27 @@ button{
     left: 10px;
     border-radius: 25px;
     border: #475b5b 1px solid;
+    z-index: 2;
+}
+
+.sideicons{
+    width: 70%;
+    height: 7%; 
+    justify-self: center;
+    position: relative;
+    display: flex;
+    border: #212121 1px solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideicons i{
+    color: white;
+    font-size: 22px;
+}
+
+.sideicons:hover{
+    border-bottom: white 1px solid;
+    background: linear-gradient(to top, red,#212121 );
+
 }
