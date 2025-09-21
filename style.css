@@ -57,6 +57,7 @@ body{
     width:100vw;
     z-index: -1;
 }
+
 #main::before{
     content: "";
     backdrop-filter: brightness(50%);
@@ -66,6 +67,7 @@ body{
     top: 0px;
     left: 0px;
 }
+
 #signin{
     position: absolute;
     top:50%;
@@ -108,12 +110,12 @@ input:focus-visible {
   box-shadow: none;
 }
 
-
 #pass{
     width:75%;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
 }
+
 #eyeopen{
     width:10%;
     border-radius: 0px;
@@ -135,6 +137,7 @@ input:focus-visible {
     border-top-right-radius: 5px;
     background-color: white;
 }
+
 #eyeclosed:hover{
     cursor: pointer;
 }
@@ -181,7 +184,7 @@ button{
     align-items: center;
 }
 
-.sideicons i{
+.icons{
     color: white;
     font-size: 22px;
 }
@@ -230,18 +233,20 @@ button{
     background-color: black;
     position: absolute;
     top: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #scroller{
     position: absolute;
     width: 80%;
     height:95%;
-    left: 10%;
-    top: 5%;
     display: flex;
     overflow-x: hidden;
     flex-wrap: nowrap;
     align-items: center;
+    scroll-behavior: smooth;
 }
 
 .top10{
@@ -259,4 +264,30 @@ button{
 
 .top10:hover{
     scale: 1.1;
+}
+
+.move{
+    width: 30px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#right{
+    right: 30px;
+}
+
+#right:hover{
+    background: linear-gradient(to left,red,black);
+}
+
+#left{
+    left: 30px;
+}
+
+#left:hover{
+    background: linear-gradient(to right,red,black);
 }

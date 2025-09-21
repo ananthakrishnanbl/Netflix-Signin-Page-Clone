@@ -5,7 +5,26 @@ for (let i=1;i<=10;i++){
 }
 
 
+let scrollbox=document.querySelector("#scroller");
+let left=document.querySelector("#left");
+let right=document.querySelector("#right");
 
+if (scrollbox.scrollLeft===0){
+    left.style.visibility="hidden";
+}
+
+right.addEventListener("click",()=>{
+    scrollbox.scrollBy({left:scrollbox.offsetWidth, behaviour: "smooth"});
+    left.style.visibility="visible";
+})
+
+left.addEventListener("click",()=>{
+    scrollbox.scrollBy({left:-scrollbox.offsetWidth, behaviour: "smooth"});
+    right.style.visibility="visible";
+    if (scrollbox.scrollLeft===0){
+        left.style.visibility="hidden";
+    }
+})
 
 let eyeButton=document.querySelector("#eyeopen");
 eyeButton.addEventListener("click",(e)=>{
