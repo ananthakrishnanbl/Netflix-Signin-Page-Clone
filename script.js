@@ -1,3 +1,12 @@
+for (let i=1;i<=10;i++){
+    let a=document.querySelector(`#p${i}`);
+    a.style.background=`url('p${i}.jpeg')`;
+    a.style.backgroundSize='cover';
+}
+
+
+
+
 let eyeButton=document.querySelector("#eyeopen");
 eyeButton.addEventListener("click",(e)=>{
     e.preventDefault()
