@@ -4,7 +4,6 @@ for (let i=1;i<=10;i++){
     a.style.backgroundSize='cover';
 }
 
-
 let scrollbox=document.querySelector("#scroller");
 let left=document.querySelector("#left");
 let right=document.querySelector("#right");
