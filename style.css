@@ -339,3 +339,114 @@ button{
     font-size: 16px;
     color: #FFFFFFB3;
 }
+
+#footer{
+    position: absolute;
+    top:calc(110vh + 775px);
+    background-color: black;
+    width: 100vw;
+    height: 1000px;
+}
+
+#questions{
+    position: absolute;
+    top: 30px;
+    justify-self: center;
+    height: 60%px;
+}
+
+.q{
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    font-size: 24px;
+    background-color: #212121;
+    margin: 10px;
+    padding: 15px;
+    align-items: center;
+}
+
+#q1{
+    margin-top: 20px;
+}
+
+.q h2{
+    font-weight: 100;
+    font-size: 50px;
+    translate: -10% -10%;
+}
+
+.q:hover{
+    background-color: #5c5b5b;
+    cursor: pointer;
+}
+
+#finisher{
+    position: absolute;
+    top: calc(60% + 50px);
+    background-color: black;
+    height: 60%;
+    width: 100vw;
+}
+
+#entry{
+    position: absolute;
+    top: 30px;
+    width: 90%;
+    display: flex;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-self: center;
+}
+
+#entry input{
+    width: 60%;
+    background-color: black;
+    font-size: 16px;
+    color: white;
+    height: 40px;
+    border: white 1px solid;
+}
+
+#entry button{
+    width: 20%;
+    height: 55px;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size : 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#finaldetails{
+    position: absolute;
+    top: 200px;
+    width: 80%;
+    justify-self: center;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: underline;
+    color: rgba(228, 215, 215, 0.788);
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+#table{
+    justify-self: center;
+    margin-top: 30px;
+}
+
+tr{
+    height: 40px;
+}
+td{
+    width: 300px;
+}
