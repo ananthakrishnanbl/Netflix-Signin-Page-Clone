@@ -39,3 +39,14 @@ eyeButton.addEventListener("click",(e)=>{
         eyeButton.setAttribute("id","eyeopen");
     }
 })
+
+let sidebar=document.querySelector("#sidebar");
+let expand=document.querySelector("#sidebarexp");
+
+sidebar.addEventListener("mouseover",(e)=>{
+    expand.style.visibility="visible"
+});
+
+sidebar.addEventListener("mouseout",(e)=>{
+    expand.style.visibility="hidden"
+});
