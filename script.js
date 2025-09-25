@@ -47,6 +47,29 @@ sidebar.addEventListener("mouseover",(e)=>{
     expand.style.visibility="visible"
 });
 
+let unexpand = (e) =>{
+    let rect = expand.getBoundingClientRect();
+    let x = e.clientX;
+    let y = e.clientY;
+    let inside =
+    x >= rect.left &&
+    x <= rect.right + 50 &&
+    y >= rect.top &&
+    y <= rect.bottom;
+    let leftRegion =
+    x >= rect.left - 50 &&
+    x < rect.left &&
+    y >= rect.top &&
+    y <= rect.bottom;
+    if (!(inside || leftRegion)){
+        expand.style.visibility="hidden"
+    }
+}
+
+document.addEventListener("mousemove",(e)=>{
+    unexpand(e)
+})
+
 sidebar.addEventListener("mouseout",(e)=>{
-    expand.style.visibility="hidden"
+    unexpand(e);
 });
